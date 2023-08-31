@@ -1,0 +1,73 @@
+.main{
+    min-height: 60vh;
+    text-align: center;
+    padding: 2em;
+}
+
+.main h2{
+    margin-bottom: 0.8em;
+}
+
+.error{
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.in{
+    border-radius: 10px;
+    
+}
+
+.button4 {
+    
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+    
+  }
+  
+  .button4:hover {background-color: #e7e7e7;}
+
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+
