@@ -3,5 +3,6 @@ export interface CadastroInterface{
     nome:string;
     email:string;
     cpf:string;
+    celular:number;
     password: string;
 }
