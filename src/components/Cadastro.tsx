@@ -15,6 +15,7 @@ const Cadastro =() => {
     const cadastrarUsuario =(e: FormEvent) => {
         e.preventDefault();
 
+
         const dados = {
             nome: nome,
             email: email,
