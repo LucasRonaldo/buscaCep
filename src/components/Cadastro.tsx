@@ -8,7 +8,7 @@ const Cadastro =() => {
     const [nome, setNome] = useState<string>("");
     const [email, setEmail]= useState<string>("");
     const [cpf, setCpf]= useState<string>("");
-    const [celular, setCelular]= useState<string>("");
+    
     const [password, setPassword]= useState<string>("");
 
 
@@ -20,7 +20,6 @@ const Cadastro =() => {
             nome: nome,
             email: email,
             cpf: cpf,
-            celular: celular,
             password: password
 
         }
@@ -52,9 +51,7 @@ const handleState = (e: ChangeEvent <HTMLInputElement>)=>{
     if(e.target.name === "cpf"){
         setCpf(e.target.value);
     }
-    if(e.target.name === "celular"){
-        setCelular(e.target.value);
-    }
+    
     if(e.target.name === "password"){
         setPassword(e.target.value);
     }
@@ -80,10 +77,6 @@ return (
                                 <div className='col-4'>
                                     <label htmlFor="cpf" className='form-label'>CPF</label>
                                     <input type="text" name='cpf' className='form-control' required  onChange={handleState}/>
-                                </div>
-                                <div className='col-4'>
-                                    <label htmlFor="celular" className='form-label'>Celular</label>
-                                    <input type="number" name='celular' className='form-control' required  onChange={handleState}/>
                                 </div>
                                 <div className='col-4'>
                                     <label htmlFor="password" className='form-label'>Senha</label>
