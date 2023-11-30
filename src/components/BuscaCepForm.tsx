@@ -28,7 +28,7 @@ const BuscaCep = () => {
                     setUf(data.uf);
                     setErro("");
                 }
-            ).catch(error => { 
+            ).catch(error => {
                 setErro("Pesquisa Inválida");
             });
 
@@ -43,21 +43,38 @@ const BuscaCep = () => {
     }
     return (
         <div>
-            <Header/>
+            <Header />
             <main className={styles.main}>
-            <form onSubmit={findCep}>
-                <label htmlFor="cep">CEP</label>
-                <input className={styles.in} type="text" name="cep" id="cep" onChange={submitForm} />
-                <input className={styles.button4} type="submit" value="Pesquisar" />
-            </form>
-            
+                
+<div className="row">
+    <center>
+                    <div className='col-5'>
+                        <label htmlFor="cep" className='form-label' >CEP</label>
+                        <div className="container-fluid">
+                                    <form className="d-flex" onSubmit={findCep} >
+                                        <input name="cep" className="form-control me-2" required type="text" onChange={submitForm} placeholder="Pesquisar CEP"   />
+                                        <input className="btn btn-outline-success" value="Pesquisar" type="submit"/>
+                                    </form>
+                                </div>
+                        
+                        
+                    </div>
+                   
+                    </center>
+                    </div>
 
-            <p>Cidade: {localidade} </p> 
-            <p>Estado:{uf} </p> 
-            <p>CEP: {cep}   </p> 
-            <p className={styles.error}>{Erro}</p>
+                   
+                   
+                    
+                
+
+
+                <p>Cidade: {localidade} </p>
+                <p>Estado:{uf} </p>
+                <p>CEP: {cep}   </p>
+                <p className={styles.error}>{Erro}</p>
             </main>
-            <Footer/>
+            <Footer />
         </div>
     );
 }
